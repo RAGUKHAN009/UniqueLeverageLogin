@@ -29,10 +29,14 @@ function validateForm() {
     loginButton.removeAttribute('disabled');
     ERROR2.classList.remove('ERRP')
     ERROR2.classList.add('SUCP')
+    ERROR1.classList.remove('ERRU')
+    ERROR1.classList.add('SUCU')
   } else {
     loginButton.setAttribute('disabled', '');
     ERROR2.classList.add('ERRP')
     ERROR2.classList.remove('SUCP')
+    Nav.classList.remove('displayN')
+    Nav.classList.add('displayB')
   }
 
 }
@@ -42,7 +46,6 @@ passwordInput.addEventListener('input', validateForm);
 
 
 const Reload = document.getElementById('Reload')
-
 Reload.addEventListener('click', () => {
   location.reload();
 });
