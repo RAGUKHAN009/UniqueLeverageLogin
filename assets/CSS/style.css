@@ -11,8 +11,7 @@ body {
 }
 
 .hero {
-    height: 100vh;
-    max-height: 960px;
+    height: 960px;
     width: 1280px;
     background-color: #EEEEEE;
     display: flex;
@@ -201,7 +200,6 @@ body {
     outline: none;
     cursor: pointer;
 }
-
 
 .Nav button:nth-child(1) {
     color: #000000;
